@@ -12,7 +12,7 @@ const userSchema = mongoose.Schema({
     },
     password:{
         type: String,
-        minlegth: 5
+        minlength: 5
     },
     lastname:{
         type: String,
@@ -33,4 +33,4 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model('User', userSchema)
 
-module.export = {User} //딴곳에서도 쓸 수 있게 export
+module.exports = {User} //딴곳에서도 쓸 수 있게 export
